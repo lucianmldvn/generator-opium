@@ -87,3 +87,8 @@ The name parameter passed in (e.g. ```thing```) will be used for route, folder a
 * ```lint```: runs linting using the configuration from ```.jshintrc``` file. Usage: ```npm run lint```
 * ```start```: starts the server using [node-supervisor](https://github.com/petruisfan/node-supervisor) (it automatically runs ```lint``` and ```test``` before). Usage: ```npm start```
 * ```test```: runs the unit tests in the ```/test``` folder using [mocha](http://mochajs.org) (it automatically runs ```lint``` before). Usage: ```npm test```
+
+
+## License
+
+[MIT License](https://github.com/lucianmoldovan/generator-opium/blob/master/LICENSE)
