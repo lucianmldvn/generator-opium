@@ -28,7 +28,7 @@ mkdir FooBar
 cd FooBar
 yo opium
 ```
-The generator will then ask you to provide the application name (by default it will take the folder name, in this case ```FooBar```).
+The generator will then ask you to provide the application name (by default it will take the folder name, in this case ```FooBar```) and it will create some skeleton files as well as installing dependencies.
 
 After this you can run ```npm start```, which will automatically run linting and tests before starting the server on  ```http://localhost:9000```. The server will automatically restart itself when you modify and save a file.
 
@@ -41,7 +41,7 @@ For the ```FooBar``` project:
     ├── api
     │   └── thing
     │       ├── index.js ............... 'thing' specific routes (like '/thing/:id')
-    │       └── thing.controller.js .... 'thing' specific methods (like 'Thing.GetById`)
+    │       └── thing.controller.js .... 'thing' specific methods (like 'ThingController.GetById`)
     ├── components
     │   └── something
     │       └── index.js ............... main logic of the 'something' component
@@ -87,7 +87,6 @@ The name parameter passed in (e.g. ```thing```) will be used for route, folder a
 * ```lint```: runs linting using the configuration from ```.jshintrc``` file. Usage: ```npm run lint```
 * ```start```: starts the server using [node-supervisor](https://github.com/petruisfan/node-supervisor) (it automatically runs ```lint``` and ```test``` before). Usage: ```npm start```
 * ```test```: runs the unit tests in the ```/test``` folder using [mocha](http://mochajs.org) (it automatically runs ```lint``` before). Usage: ```npm test```
-
 
 ## License
 

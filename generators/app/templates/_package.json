@@ -1,0 +1,13 @@
+{
+    "name": "<%= appname %>",
+    "version": "0.1.0",
+    "main": "<%= appname %>.js",
+    "scripts": {
+        "prestart": "npm test",
+        "start": "supervisor <%= appname %>.js",
+        "lint": "jshint ./ --reporter node_modules/jshint-stylish-ex/stylish.js --config .jshintrc",
+        "pretest": "npm run lint",
+        "test": "mocha --recursive"
+    },
+    "dependencies": {}
+}
