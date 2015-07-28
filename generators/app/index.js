@@ -78,7 +78,8 @@ module.exports = generators.Base.extend({
         simpleTest: function () {
             this.fs.copyTpl(this.templatePath('test.js'),
                 this.destinationPath('test/test.js'), {
-                    appName: _.camelCase(this.appname)
+                    appName: _.camelCase(this.appname),
+                    app: this.appname                
                 }
             );
         }
