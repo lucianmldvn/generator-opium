@@ -54,7 +54,8 @@ module.exports = generators.Base.extend({
             this.fs.copyTpl(
                 this.templatePath('app.js'),
                 this.destinationPath(this.appname + '.js'), {
-                    appname: this.appname
+                    appname: this.appname,
+                    appTitle: _.startCase(this.appname)
                 }
             );
         },
@@ -72,6 +73,13 @@ module.exports = generators.Base.extend({
             this.log(colors.green('   create') + ' public');
             fs.mkdirSync('test');
             this.log(colors.green('   create') + ' test');
+        },
+        simpleTest: function () {
+            this.fs.copyTpl(this.templatePath('test.js'),
+                this.destinationPath('test/test.js'), {
+                    appName: this.appname
+                }
+            );
         }
     },
     conflicts: {

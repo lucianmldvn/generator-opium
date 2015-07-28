@@ -21,14 +21,14 @@ var pjson = require('./package.json');
 
 // Setup server
 var app = express();
-app.locals.title = _.startCase('<%= appname %>');
+app.locals.title = <%= appTitle %>
 
 var server = http.createServer(app);
 expressConfig(app);
 routes(app);
 
 // Start server 
-server.listen(config.port, config.host, function '<%= appname %>'Server() {
+server.listen(config.port, config.host, function <%= appTitle %>Server() {
     console.log('\n' + colors
         .green('---------------------------------------------------------------------------'));
 

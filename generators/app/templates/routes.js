@@ -13,4 +13,10 @@ module.exports = function appRoutes(app) {
     // region API routes
     // endregion API routes
 
+    app.get('/api', function (req, res) {
+        res.json({
+            message: 'Allons-y, Allonso!'
+        });
+    });
+
 };
