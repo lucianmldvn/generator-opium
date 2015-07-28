@@ -3,7 +3,7 @@
 var chai = require('chai');
 var expect = chai.expect;
 var request = require('supertest');
-var <%= appName %> = require('../<%= appName %>');
+var <%= appName %> = require('../<%= app %>');
 
 describe('GET /api', function () {
     it('should respond with "Allons-y, Allonso!"', function (done) {
