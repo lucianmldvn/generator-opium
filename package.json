@@ -1,32 +1,27 @@
 {
-  "name": "generator-opium",
-  "version": "0.1.0",
-  "description": "A simple Yeoman generator for creating APIs using Node and Express",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lucianmoldovan/generator-opium"
-  },
-  "author": {
-    "name": "Lucian Moldovan",
-    "email": "lucian_moldovan@outlook.com",
-    "url": "https://github.com/lucianmoldovan"
-  },
-  "keywords": [
-    "yeoman-generator",
-    "opium",
-    "express api generator",
-    "node.js api generator"
-  ],
-  "bugs": {
-    "url": "https://github.com/lucianmoldovan/generator-opium/issues"
-  },
-  "license": "MIT",
-  "preferGlobal": true,
-  "dependencies": {
-    "colors": "^1.1.2",
-    "lodash": "^3.10.0",
-    "mocha": "^2.2.5",
-    "yeoman-generator": "^0.18.0",
-    "yosay": "^1.0.4"
-  }
+    "name": "generator-opium",
+    "version": "0.1.0",
+    "description": "A simple Yeoman generator for creating APIs using Node and Express",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lucianmoldovan/generator-opium"
+    },
+    "author": {
+        "name": "Lucian Moldovan",
+        "email": "lucian_moldovan@outlook.com",
+        "url": "https://github.com/lucianmoldovan"
+    },
+    "keywords": ["yeoman-generator", "opium", "express api generator", "node.js api generator"],
+    "bugs": {
+        "url": "https://github.com/lucianmoldovan/generator-opium/issues"
+    },
+    "license": "MIT",
+    "preferGlobal": true,
+    "dependencies": {
+        "colors": "^1.1.2",
+        "lodash": "^3.10.0",
+        "mocha": "^2.2.5",
+        "yeoman-generator": "^0.18.0",
+        "yosay": "^1.0.4"
+    }
 }

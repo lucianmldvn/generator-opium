@@ -5,7 +5,7 @@ var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 var os = require('os');
 
-describe('opium:component', function () {
+describe('opium:component', function opiumComponentTest() {
     before(function (done) {
         helpers.run(path.join(__dirname, '../generators/component'))
             .inDir(path.join(os.tmpdir(), './temp-test'))

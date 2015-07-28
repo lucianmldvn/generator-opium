@@ -28,7 +28,7 @@ expressConfig(app);
 routes(app);
 
 // Start server 
-server.listen(config.port, config.host, function () {
+server.listen(config.port, config.host, function '<%= appname %>'Server() {
     console.log('\n' + colors
         .green('---------------------------------------------------------------------------'));
 

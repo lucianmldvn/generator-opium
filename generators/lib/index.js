@@ -4,7 +4,7 @@ var generators = require('yeoman-generator');
 var _ = require('lodash');
 
 module.exports = generators.Base.extend({
-    constructor: function () {
+    constructor: function constructor() {
         generators.Base.apply(this, arguments);
         this.argument('name', {
             type: String,
@@ -12,7 +12,7 @@ module.exports = generators.Base.extend({
         });
         this.libName = _.kebabCase(this.name);
     },
-    writing: function () {
+    writing: function writing() {
         this.fs.copyTpl(
             this.templatePath('lib.js'),
             this.destinationPath('lib/' + this.libName + '.js'), {

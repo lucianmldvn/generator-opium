@@ -5,7 +5,7 @@ var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 var fs = require('fs');
 
-describe('opium:apiroute', function () {
+describe('opium:apiroute', function opiumApiRouteTest() {
     before(function (done) {
         helpers.run(path.join(__dirname, '../generators/apiroute'))
             .inTmpDir(function (dir) {

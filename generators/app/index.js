@@ -12,10 +12,10 @@ module.exports = generators.Base.extend({
     },
     prompting: {
         //Where you prompt users for options (where you'd call this.prompt())
-        greetUser: function () {
+        greetUser: function greetUser() {
             this.log(yosay('Welcome to Opium, stranger!'));
         },
-        setApplicationName: function () {
+        setApplicationName: function setApplicationName() {
             var done = this.async();
             this.prompt({
                 type: 'input',
@@ -28,7 +28,7 @@ module.exports = generators.Base.extend({
             }.bind(this));
         }
     },
-    configuring: function () {
+    configuring: function configuring() {
         // Saving configurations and configure the project (creating .editorconfig files and other metadata files)
         this.fs.copy(this.templatePath('config/express.js'), this.destinationPath('config/express.js'));
         this.fs.copy(this.templatePath('config/cors.js'), this.destinationPath('config/cors.js'));
@@ -42,7 +42,7 @@ module.exports = generators.Base.extend({
     default: {},
     writing: {
         // Where you write the generator specific files (routes, controllers, etc)
-        packageJson: function () {
+        packageJson: function packageJson() {
             this.fs.copyTpl(
                 this.templatePath('_package.json'),
                 this.destinationPath('package.json'), {
@@ -50,7 +50,7 @@ module.exports = generators.Base.extend({
                 }
             );
         },
-        appJs: function () {
+        appJs: function appJs() {
             this.fs.copyTpl(
                 this.templatePath('app.js'),
                 this.destinationPath(this.appname + '.js'), {
@@ -58,10 +58,10 @@ module.exports = generators.Base.extend({
                 }
             );
         },
-        routesJs: function () {
+        routesJs: function routesJs() {
             this.fs.copy(this.templatePath('routes.js'), this.destinationPath('routes.js'));
         },
-        createEmptyFolders: function () {
+        createEmptyFolders: function createEmptyFolder() {
             fs.mkdirSync('api');
             this.log(colors.green('   create') + ' api');
             fs.mkdirSync('components');
@@ -77,12 +77,12 @@ module.exports = generators.Base.extend({
     conflicts: {
         // Where conflicts are handled (used internally)
     },
-    install: function () {
+    install: function install() {
         this.log(colors.green('   install') + ' dependencies');
         // Where installation are run (npm, bower)
         if (this.options['skip-install'] !== true) {
             this.npmInstall(['async', 'body-parser', 'chai', 'colors', 'express', 'jshint', 'jshint-stylish-ex',
-             'lodash', 'mocha', 'multer', 'request', 'supervisor', 'supertest', 'sinon', 'sinon-chai'], {
+             'lodash', 'mocha', 'request', 'supervisor', 'supertest', 'sinon', 'sinon-chai'], {
                 'save': true
             });
         }
