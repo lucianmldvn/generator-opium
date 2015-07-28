@@ -55,7 +55,7 @@ module.exports = generators.Base.extend({
                 this.templatePath('app.js'),
                 this.destinationPath(this.appname + '.js'), {
                     appname: this.appname,
-                    appTitle: _.startCase(this.appname)
+                    appTitle: _.camelCase(this.appname)
                 }
             );
         },
@@ -74,10 +74,11 @@ module.exports = generators.Base.extend({
             fs.mkdirSync('test');
             this.log(colors.green('   create') + ' test');
         },
+        
         simpleTest: function () {
             this.fs.copyTpl(this.templatePath('test.js'),
                 this.destinationPath('test/test.js'), {
-                    appName: this.appname
+                    appName: _.camelCase(this.appname)
                 }
             );
         }

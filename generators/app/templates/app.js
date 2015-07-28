@@ -21,7 +21,7 @@ var pjson = require('./package.json');
 
 // Setup server
 var app = express();
-app.locals.title = <%= appTitle %>
+app.locals.title = _.startCase('<%= appname %>');
 
 var server = http.createServer(app);
 expressConfig(app);
