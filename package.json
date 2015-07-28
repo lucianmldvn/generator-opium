@@ -1,6 +1,6 @@
 {
   "name": "generator-opium",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A simple Yeoman generator for creating APIs using Node and Express",
   "repository": {
     "type": "git",
