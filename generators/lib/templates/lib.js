@@ -4,4 +4,4 @@ function <%= libName %> () {}
 
 // <%= libName %>.prototype.MethodName = function(arguments) {};
 
-module.exports = new <%= libName %> ();
+module.exports = <%= libName %> ();

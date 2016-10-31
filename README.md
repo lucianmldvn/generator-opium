@@ -66,11 +66,11 @@ For the ```FooBar``` project:
 
 ## Sub-generators
 
-**Opium** provides a set of sub-generators to create application parts. Each sub-generator will:
+**Opium** provides a set of sub-generators to create application parts. Each sub-generator:
 
-* Create one or more skeleton files for the application part type (api route, application component, helper function)
-* Create a skeleton unit test in ```/test```
-* Update ```routes.js``` with the new route (```apiroute``` sub-generator)
+* Creates one or more skeleton files for the application part type (api route, application component, helper function)
+* Creates a skeleton unit test in ```/test```
+* Updates ```routes.js``` with the new route (```apiroute``` sub-generator)
 
 There are three sub-generators: 
 * **apiroute** (usage: ```yo opium:apiroute thing```)

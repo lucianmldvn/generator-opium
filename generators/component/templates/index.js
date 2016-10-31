@@ -6,4 +6,4 @@ function <%= componentName %>() {}
 
 //<%= componentName %>.prototype.MethodName = function(arguments) {};
 
-module.exports = new <%= componentName %>();
+module.exports = <%= componentName %>();
