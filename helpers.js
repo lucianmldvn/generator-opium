@@ -23,4 +23,4 @@ Helpers.prototype.AddLineToFile = function (filename, lineToAdd, beforeMarker, s
     }
 };
 
-module.exports = Helpers();
+module.exports = new Helpers();

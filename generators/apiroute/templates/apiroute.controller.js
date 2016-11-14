@@ -6,4 +6,4 @@ function <%= routeName %>Controller() {}
 
 // <%= routeName %>Controller.prototype.MethodName = function (req, res) {};
 
-module.exports = <%= routeName %>Controller();
+module.exports = new <%= routeName %>Controller();
